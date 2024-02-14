@@ -4,7 +4,7 @@ from django.db import models
 class Service(models.Model):
     title = models.CharField(verbose_name = 'Título', max_length=200)
     subtitle = models.CharField(verbose_name = 'Subtítulo', max_length=200)
-    content = models.TextField(verbose_name = 'Contenido',)
+    content = models.TextField(verbose_name = 'Contenido')
     image = models.ImageField(verbose_name = 'Imagen', upload_to = 'services')
     created = models.DateTimeField(verbose_name = 'Fecha Creación', auto_now_add = True)
     updated = models.DateTimeField(verbose_name = 'Fecha Actualización', auto_now = True)
